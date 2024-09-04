@@ -1,0 +1,5 @@
+name=Dynamic Tarp Covers SVU3
+id=DynamicTarpCoversSVU3
+description= 
+poster=poster.png
+require=StandardizedVehicleUpgrades3Core,StandardizedVehicleUpgrades3V

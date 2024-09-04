@@ -1,0 +1,69 @@
+module Base
+{
+	model SVU_Rack_SUV_empty
+	{
+		mesh = vehicles/SUV_roofrack_tarp|roofrackEmpty,
+		texture = Vehicles/dynamic_tarp,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	model SVU_Rack_SUV_25
+	{
+		mesh = vehicles/SUV_roofrack_tarp|roofrack25,
+		texture = Vehicles/dynamic_tarp,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	model SVU_Rack_SUV_50
+	{
+		mesh = vehicles/SUV_roofrack_tarp|roofrack50,
+		texture = Vehicles/dynamic_tarp,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	model SVU_Rack_SUV_75
+	{
+		mesh = vehicles/SUV_roofrack_tarp|roofrack75,
+		texture = Vehicles/dynamic_tarp,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	model SVU_Rack_SUV_full
+	{
+		mesh = vehicles/SUV_roofrack_tarp|roofrackFull,
+		texture = Vehicles/dynamic_tarp,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	template vehicle SVU_DynamicRoofrack_SUV
+	{
+		part ATA2InteractiveTrunkRoofRack
+		{
+			model Default
+			{
+				file = SVU_Rack_SUV,
+			}
+			model Empty
+			{
+				file = SVU_Rack_SUV_empty,
+			}
+			model Fill25
+			{
+				file = SVU_Rack_SUV_25,
+			}
+			model Fill50
+			{
+				file = SVU_Rack_SUV_50,
+			}
+			model Fill75
+			{
+				file = SVU_Rack_SUV_75,
+			}
+			model Full
+			{
+				file = SVU_Rack_SUV_full,
+			}
+			setAllModelsVisible = false,
+		}
+	}
+}

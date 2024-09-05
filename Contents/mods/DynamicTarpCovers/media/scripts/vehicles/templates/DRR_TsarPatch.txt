@@ -1,0 +1,27 @@
+module Base {
+	template vehicle DRR_PatchTsarLib {
+		part ATA2InteractiveTrunkRoofRack
+        	{
+			container
+			{
+				conditionAffectsCapacity = true,
+				test = ATATuning2.ContainerAccess.RoofRack,
+			}
+			table install
+			{
+				test = ATATuning2.InstallTest.Tuning,
+				complete = ATATuning2.InstallComplete.RoofRack,
+			}
+			table uninstall
+			{
+				test = ATATuning2.UninstallTest.Tuning,
+				complete = ATATuning2.UninstallComplete.RoofRack,
+			}
+			lua
+			{
+				create = ATATuning2.Create.RoofRack,
+				init = ATATuning2.Init.RoofRack,
+			}
+		}
+	}
+}

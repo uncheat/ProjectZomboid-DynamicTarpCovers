@@ -11,6 +11,7 @@ end
 local SetTemplate = function(vehicle, armor, module)
 	module = module or "Base"
 	DoVehicleParam(vehicle, "template! = " .. armor .. ",", module)
+    	DoVehicleParam(vehicle, "template! = DRR_PatchTsarLib,", module) -- Когда Царь починит свой код - удалить эту строчку чтобы убрать наш костыль.
 end
 
 local SetRoofRackDynamic = function(vehicleName, module)

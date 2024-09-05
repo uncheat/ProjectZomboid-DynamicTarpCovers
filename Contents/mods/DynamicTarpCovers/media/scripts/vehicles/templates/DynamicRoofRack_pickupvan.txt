@@ -1,0 +1,35 @@
+module Base
+{
+	template vehicle SVU_DynamicRoofrack_PickupVan {
+		part ATA2InteractiveTrunkRoofRack
+        	{
+            		model Empty
+            		{
+                		file = SVU_Rack_SUV_empty,
+				offset = 0 0 -0.083,
+            		}
+            		model Fill25
+            		{
+                		file = SVU_Rack_SUV_25,
+				offset = 0 0 -0.083,
+            		}
+            		model Fill50
+            		{
+                		file = SVU_Rack_SUV_50,
+ 				offset = 0 0 -0.083,
+           		}
+            		model Fill75
+            		{
+                		file = SVU_Rack_SUV_75,
+ 				offset = 0 0 -0.083,
+           		}
+            		model Full
+            		{
+                		file = SVU_Rack_SUV_full,
+				offset = 0 0 -0.083,
+            		}
+
+			setAllModelsVisible = false,
+		}
+	}
+}

@@ -27,13 +27,28 @@ local SetRoofRackDynamic = function(vehicleName, module)
 	end
 end
 
-for key, val in pairs(DynamicTarpCovers.list) do
+for key, val in pairs(DynamicTarpCovers.list) do	
     SetTemplate(key, val)
+end
+
+for mod, list in pairs(DynamicTarpCovers.modded) do
+    if getActivatedMods():contains(mod) then
+        for key, val in pairs(list) do
+    	    SetTemplate(key, val)
+        end
+    end
 end
 
 local function SVUV_PatchRoofRacks()
     for key, val in pairs(DynamicTarpCovers.list) do
         SetRoofRackDynamic(key)
+    end
+    for mod, list in pairs(DynamicTarpCovers.modded) do
+        if getActivatedMods():contains(mod) then
+            for key, val in pairs(list) do
+                SetRoofRackDynamic(key)
+            end
+    	end
     end
 end
 Events.OnInitGlobalModData.Add(SVUV_PatchRoofRacks)

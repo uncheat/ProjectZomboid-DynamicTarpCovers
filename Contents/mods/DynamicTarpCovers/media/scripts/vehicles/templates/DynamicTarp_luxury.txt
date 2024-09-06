@@ -1,0 +1,35 @@
+module Base
+{
+	template vehicle SVU_DynamicRoofrack_Luxury
+	{
+		part ATA2InteractiveTrunkRoofRack
+		{
+			model Empty
+			{
+				file = SVU_Rack_Normal_empty,
+				offset = 0 0 -0.1115,
+			}
+			model Fill25
+			{
+				file = SVU_Rack_Normal_25,
+				offset = 0 0 -0.1115,
+			}
+			model Fill50
+			{
+				file = SVU_Rack_Normal_50,
+				offset = 0 0 -0.1115,
+			}
+			model Fill75
+			{
+				file = SVU_Rack_Normal_75,
+				offset = 0 0 -0.1115,
+			}
+			model Full
+			{
+				file = SVU_Rack_Normal_full,
+				offset = 0 0 -0.1115,
+			}
+			setAllModelsVisible = false,
+		}
+	}
+}

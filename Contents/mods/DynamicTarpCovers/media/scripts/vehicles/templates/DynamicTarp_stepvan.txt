@@ -1,0 +1,65 @@
+module Base
+{
+	model SVU_Rack_StepVan_empty
+	{
+		mesh = vehicles/Twin_roofrack_tarp|roofrackEmpty,
+		texture = Vehicles/dynamic_tarp_short,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	model SVU_Rack_StepVan_25
+	{
+		mesh = vehicles/Twin_roofrack_tarp|roofrack25,
+		texture = Vehicles/dynamic_tarp_short,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	model SVU_Rack_StepVan_50
+	{
+		mesh = vehicles/Twin_roofrack_tarp|roofrack50,
+		texture = Vehicles/dynamic_tarp_short,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	model SVU_Rack_StepVan_75
+	{
+		mesh = vehicles/Twin_roofrack_tarp|roofrack75,
+		texture = Vehicles/dynamic_tarp_short,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	model SVU_Rack_StepVan_full
+	{
+		mesh = vehicles/Twin_roofrack_tarp|roofrackFull,
+		texture = Vehicles/dynamic_tarp_short,
+		shader = vehiclewheel,
+		scale = 0.004,
+	}
+	template vehicle SVU_DynamicRoofrack_StepVan
+	{
+		part ATA2InteractiveTrunkRoofRack
+		{
+			model Empty
+			{
+				file = SVU_Rack_StepVan_empty,
+			}
+			model Fill25
+			{
+				file = SVU_Rack_StepVan_25,
+			}
+			model Fill50
+			{
+				file = SVU_Rack_StepVan_50,
+			}
+			model Fill75
+			{
+				file = SVU_Rack_StepVan_75,
+			}
+			model Full
+			{
+				file = SVU_Rack_StepVan_full,
+			}
+			setAllModelsVisible = false,
+		}
+	}
+}

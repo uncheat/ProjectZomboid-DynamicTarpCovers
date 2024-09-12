@@ -1,0 +1,35 @@
+module Base
+{
+	template vehicle SVU_DynamicRoofrack_GMC
+	{
+		part ATA2InteractiveTrunkRoofRack
+		{
+			model Empty
+			{
+				file = SVU_Rack_StepVan_empty,
+				offset = 0 -0.1388 0.7422,
+			}
+			model Fill25
+			{
+				file = SVU_Rack_StepVan_25,
+				offset = 0 -0.1388 0.7422,
+			}
+			model Fill50
+			{
+				file = SVU_Rack_StepVan_50,
+				offset = 0 -0.1388 0.7422,
+			}
+			model Fill75
+			{
+				file = SVU_Rack_StepVan_75,
+				offset = 0 -0.1388 0.7422,
+			}
+			model Full
+			{
+				file = SVU_Rack_StepVan_full,
+				offset = 0 -0.1388 0.7422,
+			}
+			setAllModelsVisible = false,
+		}
+	}
+}

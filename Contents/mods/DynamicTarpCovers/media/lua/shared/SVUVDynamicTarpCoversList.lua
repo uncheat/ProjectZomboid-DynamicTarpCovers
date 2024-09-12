@@ -61,11 +61,11 @@ DynamicTarpCovers = {
 
         ["TallerMecanico"] = { 
             ["VanSnakeneta"] = "SVU_DynamicRoofrack_Van",
-            ["VanGenova",   "SVU_DynamicRoofrack_Van",
+            ["VanGenova"] = "SVU_DynamicRoofrack_Van",
             ["CarTaxiArg"] = "SVU_DynamicRoofrack_Van",
             ["StepVan_Nubasian"] = "SVU_DynamicRoofrack_StepVan",
 
-            ["Vancmneta",   "SVU_DynamicRoofrack_Van",
+            ["Vancmneta"] = "SVU_DynamicRoofrack_Van",
             ["PickUpTruckKelo"] = "SVU_DynamicRoofrack_PickupVan",
             ["StepVanNubAsian"] = "SVU_DynamicRoofrack_StepVan",
             ["StepVanNumark"] = "SVU_DynamicRoofrack_StepVan",
